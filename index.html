@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Farmacia Salud</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -43,6 +44,11 @@
 <span>Ubicación</span>
 </div>
 
+<div class="menu carrito">
+<img src="Carrito.png">
+<span id="contador">0</span>
+</div>
+
 </nav>
 
 </header>
@@ -54,11 +60,17 @@
 
 </section>
 
+<section class="buscador">
+
+<input type="text" id="buscar" placeholder="Buscar medicamento..." onkeyup="buscarProducto()">
+
+</section>
+
 <section class="productos">
 
 <h2>Nuestros Productos</h2>
 
-<div class="grid">
+<div class="grid" id="listaProductos">
 
 <div class="producto">
 <img src="Pastillas.jpg">
@@ -117,5 +129,4 @@
 <script src="script.js"></script>
 
 </body>
-
 </html>
