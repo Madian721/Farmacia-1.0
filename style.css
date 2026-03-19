@@ -71,10 +71,6 @@ padding:90px 20px;
 margin-top:20px;
 }
 
-.banner h2{
-font-size:36px;
-}
-
 /* BUSCADOR */
 
 .buscador{
@@ -86,17 +82,12 @@ width:300px;
 padding:10px;
 border-radius:20px;
 border:1px solid #ccc;
-font-size:14px;
 }
 
 /* PRODUCTOS */
 
 .productos{
 padding:40px;
-}
-
-.productos h2{
-margin-bottom:40px;
 }
 
 .grid{
@@ -161,6 +152,26 @@ gap:25px;
 width:220px;
 border-radius:15px;
 box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* VIDEOS */
+
+.videos{
+padding:60px 20px;
+background:#ecf0f1;
+}
+
+.video-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.video-grid video{
+width:320px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* FOOTER */
