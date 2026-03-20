@@ -5,8 +5,11 @@ contador++;
 document.getElementById("contador").innerText = contador;
 }
 
-/* BUSCADOR */
-document.getElementById("buscar").addEventListener("keyup", function(){
+/* BUSCADOR SEGURO */
+let buscador = document.getElementById("buscar");
+
+if(buscador){
+buscador.addEventListener("keyup", function(){
 let filtro = this.value.toLowerCase();
 let productos = document.querySelectorAll(".producto");
 
@@ -15,10 +18,16 @@ let texto = p.innerText.toLowerCase();
 p.style.display = texto.includes(filtro) ? "block" : "none";
 });
 });
+}
 
 /* FORMULARIO */
-document.getElementById("formulario").addEventListener("submit", function(e){
+let form = document.getElementById("formulario");
+
+if(form){
+form.addEventListener("submit", function(e){
 e.preventDefault();
 alert("Mensaje enviado correctamente");
 });
+}
+
 
