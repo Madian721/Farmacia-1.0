@@ -12,8 +12,6 @@
 
 <body>
 
-<!-- 1 HEADER -->
-
 <header>
 <h1>💊 Farmacia Salud+</h1>
 
@@ -31,20 +29,16 @@
 </div>
 </header>
 
-<!-- 2 BANNER -->
-
 <section id="inicio" class="banner">
 <h2>Tu salud es nuestra prioridad</h2>
 <p>Medicamentos, vitaminas y atención profesional</p>
 </section>
 
-<!-- 3 BUSCADOR -->
-
 <section class="buscador">
 <input type="text" id="buscar" placeholder="Buscar medicamento...">
 </section>
 
-<!-- 4 PRODUCTOS -->
+<!-- PRODUCTOS -->
 
 <section id="productos" class="productos">
 <h2>Productos</h2>
@@ -72,62 +66,79 @@
 <button onclick="comprar()">Agregar</button>
 </div>
 
+<div class="producto">
+<img src="Pastillas.jpg">
+<h3>Antigripal</h3>
+<p>$70</p>
+<button onclick="comprar()">Agregar</button>
+</div>
+
+<div class="producto">
+<img src="Pastillas2.jpg">
+<h3>Jarabe</h3>
+<p>$90</p>
+<button onclick="comprar()">Agregar</button>
+</div>
+
+<div class="producto">
+<img src="Pastillas3.jpg">
+<h3>Ácido Fólico</h3>
+<p>$40</p>
+<button onclick="comprar()">Agregar</button>
+</div>
+
 </div>
 </section>
 
-<!-- 5 OFERTAS -->
+<!-- OFERTAS -->
 
 <section id="ofertas" class="ofertas">
 <h2>Ofertas</h2>
 
-<div class="grid">
+<div class="carrusel" id="carrusel">
 
 <div class="producto oferta">
 <h3>Paracetamol</h3>
 <p><del>$50</del> $35</p>
-<span class="descuento">-30%</span>
 </div>
 
 <div class="producto oferta">
 <h3>Vitaminas</h3>
 <p><del>$80</del> $60</p>
-<span class="descuento">-25%</span>
+</div>
+
+<div class="producto oferta">
+<h3>Ibuprofeno</h3>
+<p><del>$60</del> $45</p>
+</div>
+
+<div class="producto oferta">
+<h3>Jarabe</h3>
+<p><del>$90</del> $70</p>
 </div>
 
 </div>
+
 </section>
 
-<!-- 6 SERVICIOS -->
+<!-- SERVICIOS -->
 
 <section id="servicios" class="servicios">
 <h2>Servicios</h2>
 
 <div class="grid">
 
-<div class="producto">
-<h3>Pago de servicios</h3>
-<p>Luz, agua, internet</p>
-</div>
-
-<div class="producto">
-<h3>Envíos a domicilio</h3>
-<p>Recibe en casa</p>
-</div>
-
-<div class="producto">
-<h3>Recargas</h3>
-<p>Tiempo aire</p>
-</div>
-
-<div class="producto">
-<h3>Consulta médica</h3>
-<p>Atención rápida</p>
-</div>
+<div class="producto"><h3>Pago de servicios</h3><p>Luz, agua, internet</p></div>
+<div class="producto"><h3>Envíos</h3><p>Recibe en casa</p></div>
+<div class="producto"><h3>Recargas</h3><p>Tiempo aire</p></div>
+<div class="producto"><h3>Consulta médica</h3><p>Atención rápida</p></div>
+<div class="producto"><h3>Vacunación</h3><p>Prevención</p></div>
+<div class="producto"><h3>Presión arterial</h3><p>Monitoreo</p></div>
 
 </div>
 </section>
 
-<!-- 7 VIDEOS -->
+<!-- VIDEOS -->
 
 <section id="videos" class="videos">
 <h2>Consejos de Salud</h2>
@@ -136,23 +147,23 @@
 
 <div class="video-item">
 <video controls src="SFarmacia.mp4"></video>
-<p>Cómo usar correctamente tus medicamentos.</p>
+<p>Uso correcto de medicamentos</p>
 </div>
 
 <div class="video-item">
 <video controls src="Nolo.mp4"></video>
-<p>Importancia de no automedicarse.</p>
+<p>No automedicarse</p>
 </div>
 
 <div class="video-item">
 <video controls src="Tenemos.mp4"></video>
-<p>Productos esenciales para el hogar.</p>
+<p>Productos esenciales</p>
 </div>
 
 </div>
 </section>
 
-<!-- 8 CONTACTO -->
+<!-- CONTACTO -->
 
 <section id="contacto" class="contacto">
 <h2>Contacto</h2>
@@ -160,7 +171,6 @@
 <p>📍 Ometepec, Guerrero</p>
 <p>📞 +52 555 123 456</p>
 <p>📧 farmacia@gmail.com</p>
-<p>🕒 8:00 AM - 10:00 PM</p>
 
 <form id="formulario">
 <input type="text" placeholder="Nombre" required>
@@ -168,6 +178,7 @@
 <textarea placeholder="Mensaje"></textarea>
 <button type="submit">Enviar</button>
 </form>
+
 </section>
 
 <footer>
@@ -178,4 +189,5 @@
 
 </body>
 </html>
+
 
