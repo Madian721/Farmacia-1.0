@@ -1,31 +1,33 @@
-let carrito = 0;
+let contador = 0;
 
-function comprar(producto){
-
-carrito++;
-
-document.getElementById("contador").textContent = carrito;
-
-alert(producto + " agregado al carrito");
-
+function comprar(){
+contador++;
+document.getElementById("contador").innerText = contador;
 }
 
-function buscarProducto(){
+/* BUSCADOR */
+document.getElementById("buscar").addEventListener("keyup", function(){
+let filtro = this.value.toLowerCase();
+let productos = document.querySelectorAll(".producto");
 
-let input = document.getElementById("buscar").value.toLowerCase();
+productos.forEach(p => {
+let texto = p.innerText.toLowerCase();
+p.style.display = texto.includes(filtro) ? "block" : "none";
+});
+});
 
-let productos = document.getElementsByClassName("producto");
+/* FORMULARIO */
+document.getElementById("formulario").addEventListener("submit", function(e){
+e.preventDefault();
+alert("Mensaje enviado correctamente");
+});
 
-for(let i=0;i<productos.length;i++){
+/* AUTO SCROLL OFERTAS */
+let carrusel = document.getElementById("carrusel");
 
-let nombre = productos[i].getElementsByTagName("h3")[0].textContent.toLowerCase();
-
-if(nombre.includes(input)){
-productos[i].style.display="block";
-}else{
-productos[i].style.display="none";
+setInterval(()=>{
+carrusel.scrollLeft += 250;
+if(carrusel.scrollLeft >= carrusel.scrollWidth - carrusel.clientWidth){
+carrusel.scrollLeft = 0;
 }
-
-}
-
-}
+},3000);
