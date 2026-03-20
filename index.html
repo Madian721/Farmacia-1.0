@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Farmacia Salud+</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -20,6 +19,7 @@
 <a href="#productos">Productos</a>
 <a href="#ofertas">Ofertas</a>
 <a href="#servicios">Servicios</a>
+<a href="#equipo">Equipo</a>
 <a href="#videos">Videos</a>
 <a href="#contacto">Contacto</a>
 </nav>
@@ -29,21 +29,25 @@
 </div>
 </header>
 
+<!-- 1 -->
+
 <section id="inicio" class="banner">
 <h2>Tu salud es nuestra prioridad</h2>
 <p>Medicamentos, vitaminas y atención profesional</p>
 </section>
 
+<!-- 2 -->
+
 <section class="buscador">
 <input type="text" id="buscar" placeholder="Buscar medicamento...">
 </section>
 
-<!-- PRODUCTOS -->
+<!-- 3 -->
 
 <section id="productos" class="productos">
 <h2>Productos</h2>
 
-<div class="grid" id="listaProductos">
+<div class="grid">
 
 <div class="producto">
 <img src="Pastillas.jpg">
@@ -66,98 +70,95 @@
 <button onclick="comprar()">Agregar</button>
 </div>
 
-<div class="producto">
-<img src="Pastillas.jpg">
-<h3>Antigripal</h3>
-<p>$70</p>
-<button onclick="comprar()">Agregar</button>
-</div>
-
-<div class="producto">
-<img src="Pastillas2.jpg">
-<h3>Jarabe</h3>
-<p>$90</p>
-<button onclick="comprar()">Agregar</button>
-</div>
-
-<div class="producto">
-<img src="Pastillas3.jpg">
-<h3>Ácido Fólico</h3>
-<p>$40</p>
-<button onclick="comprar()">Agregar</button>
-</div>
-
 </div>
 </section>
 
-<!-- OFERTAS -->
+<!-- 4 OFERTAS PRO -->
 
 <section id="ofertas" class="ofertas">
-<h2>Ofertas</h2>
+<h2>Aprovecha estas ofertas</h2>
+<p class="subtitulo">¡Siempre ahorrando, siempre contigo!</p>
 
-<div class="carrusel" id="carrusel">
+<div class="ofertas-grid">
 
-<div class="producto oferta">
+<div class="oferta-card verde">
+<span class="badge">Especial</span>
+<img src="Pastillas.jpg">
 <h3>Paracetamol</h3>
-<p><del>$50</del> $35</p>
+<p class="precio">$35</p>
+<button onclick="comprar()">Agregar</button>
 </div>
 
-<div class="producto oferta">
-<h3>Vitaminas</h3>
-<p><del>$80</del> $60</p>
-</div>
-
-<div class="producto oferta">
+<div class="oferta-card gris">
+<span class="badge rojo">35% OFF</span>
+<img src="Pastillas2.jpg">
 <h3>Ibuprofeno</h3>
-<p><del>$60</del> $45</p>
+<p class="precio">$45</p>
+<button onclick="comprar()">Agregar</button>
 </div>
 
-<div class="producto oferta">
+<div class="oferta-card verde">
+<span class="badge rojo">20% OFF</span>
+<img src="Pastillas3.jpg">
+<h3>Vitaminas</h3>
+<p class="precio">$60</p>
+<button onclick="comprar()">Agregar</button>
+</div>
+
+<div class="oferta-card azul">
+<span class="badge rojo">2x1</span>
+<img src="Pastillas.jpg">
 <h3>Jarabe</h3>
-<p><del>$90</del> $70</p>
+<p class="precio">$65</p>
+<button onclick="comprar()">Agregar</button>
 </div>
 
 </div>
-
 </section>
 
-<!-- SERVICIOS -->
+<!-- 5 -->
 
 <section id="servicios" class="servicios">
 <h2>Servicios</h2>
-
 <div class="grid">
-
-<div class="producto"><h3>Pago de servicios</h3><p>Luz, agua, internet</p></div>
-<div class="producto"><h3>Envíos</h3><p>Recibe en casa</p></div>
-<div class="producto"><h3>Recargas</h3><p>Tiempo aire</p></div>
-<div class="producto"><h3>Consulta médica</h3><p>Atención rápida</p></div>
-<div class="producto"><h3>Vacunación</h3><p>Prevención</p></div>
-<div class="producto"><h3>Presión arterial</h3><p>Monitoreo</p></div>
-
+<div class="producto"><h3>Recargas</h3></div>
+<div class="producto"><h3>Pago de luz</h3></div>
+<div class="producto"><h3>Envíos</h3></div>
 </div>
 </section>
 
-<!-- VIDEOS -->
+<!-- 6 (sin titulo visible) -->
+
+<section class="extra">
+<p>✔ Atención 24 horas ✔ Productos originales ✔ Entrega rápida</p>
+</section>
+
+<!-- 7 EQUIPO -->
+
+<section id="equipo" class="equipo">
+<h2>Nuestro equipo</h2>
+<div class="grid">
+<img src="doctor1.jpg">
+<img src="doctor2.jpg">
+<img src="doctor3.jpg">
+</div>
+</section>
+
+<!-- 8 VIDEOS -->
 
 <section id="videos" class="videos">
 <h2>Consejos de Salud</h2>
 
 <div class="video-grid">
 
-<div class="video-item">
+<div>
 <video controls src="SFarmacia.mp4"></video>
 <p>Uso correcto de medicamentos</p>
 </div>
 
-<div class="video-item">
+<div>
 <video controls src="Nolo.mp4"></video>
 <p>No automedicarse</p>
-</div>
-
-<div class="video-item">
-<video controls src="Tenemos.mp4"></video>
-<p>Productos esenciales</p>
 </div>
 
 </div>
@@ -171,6 +172,7 @@
 <p>📍 Ometepec, Guerrero</p>
 <p>📞 +52 555 123 456</p>
 <p>📧 farmacia@gmail.com</p>
+<p>🕒 24 horas</p>
 
 <form id="formulario">
 <input type="text" placeholder="Nombre" required>
@@ -189,5 +191,6 @@
 
 </body>
 </html>
+
 
 
