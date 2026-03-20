@@ -8,7 +8,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -30,26 +29,25 @@
 </div>
 </header>
 
-<!-- 1 -->
+<!-- BANNER -->
 
 <section id="inicio" class="banner">
 <h2>Tu salud es nuestra prioridad</h2>
 <p>Medicamentos y atención profesional</p>
 </section>
 
-<!-- 2 -->
+<!-- BUSCADOR -->
 
 <section class="buscador">
 <input type="text" id="buscar" placeholder="Buscar producto...">
 </section>
 
-<!-- 3 PRODUCTOS -->
+<!-- PRODUCTOS -->
 
 <section id="productos" class="productos">
 <h2>Productos</h2>
 
 <div class="grid">
-
 <div class="producto">
 <img src="Pastillas.jpg">
 <h3>Paracetamol</h3>
@@ -70,11 +68,11 @@
 <p>$80</p>
 <button onclick="comprar()">Agregar</button>
 </div>
-
 </div>
+
 </section>
 
-<!-- 4 OFERTAS -->
+<!-- OFERTAS -->
 
 <section id="ofertas" class="ofertas">
 <h2>Aprovecha estas ofertas</h2>
@@ -98,65 +96,48 @@
 <button onclick="comprar()">Agregar</button>
 </div>
 
-<div class="oferta-card verde">
-<span class="badge">20% OFF</span>
+<div class="oferta-card azul">
+<span class="badge">2x1</span>
 <img src="Pastillas3.jpg">
 <h3>Vitaminas</h3>
 <p class="precio">$60</p>
 <button onclick="comprar()">Agregar</button>
 </div>
 
-<div class="oferta-card azul">
-<span class="badge">2x1</span>
-<img src="Pastillas.jpg">
-<h3>Jarabe</h3>
-<p class="precio">$65</p>
-<button onclick="comprar()">Agregar</button>
-</div>
-
 </div>
 </section>
 
-<!-- 5 SERVICIOS -->
+<!-- SERVICIOS -->
 
 <section id="servicios" class="servicios">
 <h2>Servicios</h2>
-
 <div class="grid">
 <div class="producto"><h3>Recargas</h3></div>
 <div class="producto"><h3>Pago de servicios</h3></div>
 <div class="producto"><h3>Envíos</h3></div>
 </div>
-
 </section>
 
-<!-- 6 EXTRA (sin titulo visible) -->
-
-<section class="extra">
-<p>✔ Atención 24 horas ✔ Productos originales ✔ Entrega rápida</p>
-</section>
-
-<!-- 7 VIDEOS -->
+<!-- VIDEOS -->
 
 <section id="videos" class="videos">
 <h2>Consejos de Salud</h2>
 
 <div class="video-grid">
-
-<div class="video-item">
+<div>
 <video controls src="SFarmacia.mp4"></video>
 <p>Uso correcto de medicamentos</p>
 </div>
 
-<div class="video-item">
+<div>
 <video controls src="Nolo.mp4"></video>
 <p>No automedicarse</p>
 </div>
-
 </div>
+
 </section>
 
-<!-- 8 CONTACTO -->
+<!-- CONTACTO -->
 
 <section id="contacto" class="contacto">
 <h2>Contacto</h2>
@@ -164,7 +145,6 @@
 <p>📍 Ometepec, Guerrero</p>
 <p>📞 +52 555 123 456</p>
 <p>📧 farmacia@gmail.com</p>
-<p>🕒 Abierto 24 horas</p>
 
 <form id="formulario">
 <input type="text" placeholder="Nombre" required>
@@ -175,8 +155,80 @@
 
 </section>
 
-<footer>
-<p>Farmacia Salud+ © 2025</p>
+<!-- FOOTER PRO -->
+
+<section class="footer-top">
+
+<div class="registro">
+<input type="text" placeholder="Nombre">
+<input type="text" placeholder="Apellidos">
+<input type="email" placeholder="Correo electrónico">
+<button>Registrarme</button>
+
+<label class="check">
+<input type="checkbox">
+Acepto <a href="#">Términos</a> y <a href="#">Privacidad</a>
+</label>
+</div>
+
+<div class="footer-grid">
+
+<div>
+<h3>Guía de compras</h3>
+<p>¿Cómo comprar?</p>
+<p>Preguntas frecuentes</p>
+<p>Cobertura</p>
+</div>
+
+<div>
+<h3>Políticas</h3>
+<p>Términos</p>
+<p>Privacidad</p>
+<p>Cookies</p>
+</div>
+
+<div>
+<h3>Empresa</h3>
+<p>Nosotros</p>
+<p>Contacto</p>
+<p>Bolsa de trabajo</p>
+</div>
+
+<div>
+<h3>Facturación</h3>
+<p>Facturación</p>
+<p>Ayuda</p>
+</div>
+
+<div>
+<h3>Contacto</h3>
+<p>CDMX, México</p>
+<p>Tel: 800 911 6666</p>
+</div>
+
+</div>
+
+<div class="extras">
+
+<div class="redes">
+<p>Síguenos</p>
+<span>📘</span>
+<span>📸</span>
+<span>▶</span>
+</div>
+
+<div class="pagos">
+<p>Métodos de pago</p>
+<span>💳</span>
+<span>🏦</span>
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer-bottom">
+<p>© 2025 FARMACIA SALUD+ | TODOS LOS DERECHOS RESERVADOS</p>
 </footer>
 
 <script src="script.js"></script>
