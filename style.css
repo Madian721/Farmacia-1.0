@@ -24,10 +24,36 @@ text-decoration:none;
 
 /* BANNER */
 .banner{
-background:#27ae60;
+background:linear-gradient(rgba(39,174,96,0.8),rgba(39,174,96,0.8)), url("https://images.unsplash.com/photo-1580281657527-47f249e8f4df");
+background-size:cover;
+background-position:center;
 color:white;
-padding:80px;
+padding:100px 20px;
 text-align:center;
+}
+
+.banner-content{
+max-width:600px;
+margin:auto;
+}
+
+.banner h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.banner p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.banner button{
+padding:12px 25px;
+font-size:16px;
+border-radius:30px;
+background:white;
+color:#27ae60;
+font-weight:bold;
 }
 
 /* BUSCADOR */
@@ -43,7 +69,7 @@ border-radius:20px;
 border:1px solid #ccc;
 }
 
-/* GRID */
+/* PRODUCTOS */
 .grid{
 display:flex;
 flex-wrap:wrap;
@@ -85,16 +111,23 @@ text-align:center;
 
 .ofertas-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
 gap:15px;
-max-width:900px;
+max-width:700px;
 margin:auto;
 }
 
 .oferta-card{
-padding:15px;
-border-radius:12px;
+padding:12px;
+border-radius:10px;
 text-align:center;
+font-size:14px;
+}
+
+.oferta-card img{
+width:100%;
+height:100px;
+object-fit:contain;
 }
 
 .verde{background:#dff0d8;}
@@ -112,6 +145,7 @@ font-size:12px;
 .precio{
 color:#27ae60;
 font-weight:bold;
+font-size:16px;
 }
 
 /* VIDEOS */
@@ -191,6 +225,7 @@ color:white;
 text-align:center;
 padding:10px;
 }
+
 
 
 
