@@ -5,7 +5,7 @@ contador++;
 document.getElementById("contador").innerText = contador;
 }
 
-/* BUSCADOR SEGURO */
+/* BUSCADOR */
 let buscador = document.getElementById("buscar");
 
 if(buscador){
