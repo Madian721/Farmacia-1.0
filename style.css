@@ -1,8 +1,4 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:'Poppins', sans-serif;
@@ -26,10 +22,6 @@ margin:10px;
 text-decoration:none;
 }
 
-nav a:hover{
-text-decoration:underline;
-}
-
 .carrito{
 background:white;
 color:#27ae60;
@@ -45,30 +37,13 @@ padding:120px 20px;
 text-align:center;
 }
 
-/* BUSCADOR */
-.buscador{
-text-align:center;
-margin:40px;
-}
-
-#buscar{
-width:300px;
-padding:10px;
-border-radius:20px;
-}
-
-/* SECCIONES */
-.productos, .ofertas, .servicios, .videos, .contacto{
-padding:80px 20px;
-text-align:center;
-}
-
 /* GRID */
 .grid{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:40px;
+gap:30px;
+padding:40px;
 }
 
 /* PRODUCTOS */
@@ -76,20 +51,16 @@ gap:40px;
 background:white;
 padding:20px;
 border-radius:15px;
-width:220px;
+width:200px;
+text-align:center;
 box-shadow:0 10px 20px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.producto:hover{
-transform:translateY(-10px) scale(1.05);
 }
 
 .producto img{
 width:100%;
-border-radius:10px;
 }
 
+/* BOTON */
 button{
 background:#27ae60;
 color:white;
@@ -99,55 +70,72 @@ border-radius:20px;
 cursor:pointer;
 }
 
-button:hover
+/* OFERTAS */
+.ofertas{
+padding:80px 20px;
+background:#f2f2f2;
+text-align:center;
+}
 
-/* CARRUSEL */
-.carrusel{
-display:flex;
+.subtitulo{color:red;margin-bottom:30px;}
+
+.ofertas-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
-overflow-x:auto;
+max-width:1000px;
+margin:auto;
+}
+
+.oferta-card{
+position:relative;
 padding:20px;
-scroll-behavior:smooth;
+border-radius:15px;
+transition:0.3s;
 }
 
-.carrusel::-webkit-scrollbar{
-height:8px;
+.oferta-card:hover{
+transform:scale(1.05);
 }
 
-.carrusel::-webkit-scrollbar-thumb{
-background:#27ae60;
-border-radius:10px;
+.verde{background:#dff0d8;}
+.gris{background:#eaeaea;}
+.azul{background:#d6eaf8;}
+
+.badge{
+position:absolute;
+top:10px;
+left:10px;
+background:red;
+color:white;
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
 }
 
-/* SERVICIOS */
-.servicios{
-background:#ecf9f1;
+.precio{
+color:#27ae60;
+font-weight:bold;
 }
 
 /* VIDEOS */
 .video-grid{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
 gap:20px;
-}
-
-.video-item{
-width:300px;
+padding:40px;
 }
 
 video{
-width:100%;
-border-radius:10px;
+width:300px;
 }
 
 /* CONTACTO */
-.contacto input, .contacto textarea{
+.contacto input,.contacto textarea{
 display:block;
 margin:10px auto;
-width:300px;
+width:250px;
 padding:10px;
-border-radius:10px;
 }
 
 /* FOOTER */
