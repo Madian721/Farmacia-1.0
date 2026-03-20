@@ -1,74 +1,53 @@
 <!DOCTYPE html>
+
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
-<title>Farmacia Salud</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmacia Salud+</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<header>
+<!-- 1 HEADER -->
 
-<h1>Farmacia Salud</h1>
+<header>
+<h1>💊 Farmacia Salud+</h1>
 
 <nav>
-
-<div class="menu">
-<img src="inicio.png">
-<span>Inicio</span>
-</div>
-
-<div class="menu">
-<img src="Productos.png">
-<span>Productos</span>
-</div>
-
-<div class="menu">
-<img src="Ofertas.png">
-<span>Ofertas</span>
-</div>
-
-<div class="menu">
-<img src="telefono.png">
-<span>Contacto</span>
-</div>
-
-<div class="menu">
-<img src="ubicacion.png">
-<span>Ubicación</span>
-</div>
-
-<div class="menu carrito">
-<img src="Carrito.png">
-<span id="contador">0</span>
-</div>
-
+<a href="#inicio">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#ofertas">Ofertas</a>
+<a href="#servicios">Servicios</a>
+<a href="#videos">Videos</a>
+<a href="#contacto">Contacto</a>
 </nav>
 
+<div class="carrito">
+🛒 <span id="contador">0</span>
+</div>
 </header>
 
-<section class="banner">
+<!-- 2 BANNER -->
 
+<section id="inicio" class="banner">
 <h2>Tu salud es nuestra prioridad</h2>
 <p>Medicamentos, vitaminas y atención profesional</p>
-
 </section>
+
+<!-- 3 BUSCADOR -->
 
 <section class="buscador">
-
-<input type="text" id="buscar" placeholder="Buscar medicamento..." onkeyup="buscarProducto()">
-
+<input type="text" id="buscar" placeholder="Buscar medicamento...">
 </section>
 
-<section class="productos">
+<!-- 4 PRODUCTOS -->
 
-<h2>Nuestros Productos</h2>
+<section id="productos" class="productos">
+<h2>Productos</h2>
 
 <div class="grid" id="listaProductos">
 
@@ -76,79 +55,127 @@
 <img src="Pastillas.jpg">
 <h3>Paracetamol</h3>
 <p>$50</p>
-<button onclick="comprar('Paracetamol')">Comprar</button>
+<button onclick="comprar()">Agregar</button>
 </div>
 
 <div class="producto">
 <img src="Pastillas2.jpg">
 <h3>Ibuprofeno</h3>
 <p>$60</p>
-<button onclick="comprar('Ibuprofeno')">Comprar</button>
+<button onclick="comprar()">Agregar</button>
 </div>
 
 <div class="producto">
 <img src="Pastillas3.jpg">
 <h3>Vitaminas</h3>
 <p>$80</p>
-<button onclick="comprar('Vitaminas')">Comprar</button>
+<button onclick="comprar()">Agregar</button>
+</div>
+
+</div>
+</section>
+
+<!-- 5 OFERTAS -->
+
+<section id="ofertas" class="ofertas">
+<h2>Ofertas</h2>
+
+<div class="grid">
+
+<div class="producto oferta">
+<h3>Paracetamol</h3>
+<p><del>$50</del> $35</p>
+<span class="descuento">-30%</span>
+</div>
+
+<div class="producto oferta">
+<h3>Vitaminas</h3>
+<p><del>$80</del> $60</p>
+<span class="descuento">-25%</span>
+</div>
+
+</div>
+</section>
+
+<!-- 6 SERVICIOS -->
+
+<section id="servicios" class="servicios">
+<h2>Servicios</h2>
+
+<div class="grid">
+
+<div class="producto">
+<h3>Pago de servicios</h3>
+<p>Luz, agua, internet</p>
 </div>
 
 <div class="producto">
-<img src="Pastillas.jpg">
-<h3>Antigripal</h3>
-<p>$70</p>
-<button onclick="comprar('Antigripal')">Comprar</button>
+<h3>Envíos a domicilio</h3>
+<p>Recibe en casa</p>
+</div>
+
+<div class="producto">
+<h3>Recargas</h3>
+<p>Tiempo aire</p>
+</div>
+
+<div class="producto">
+<h3>Consulta médica</h3>
+<p>Atención rápida</p>
 </div>
 
 </div>
-
 </section>
 
-<section class="equipo">
+<!-- 7 VIDEOS -->
 
-<h2>Nuestro Equipo Profesional</h2>
-
-<div class="doctores">
-
-<img src="Farmaceutico.jpg">
-<img src="Farmaceutico2.jpg">
-<img src="Quimico.jpg">
-<img src="Quimico.jpg">
-
-</div>
-
-</section>
-
-<section class="videos">
-
-<h2>Información y consejos de salud</h2>
+<section id="videos" class="videos">
+<h2>Consejos de Salud</h2>
 
 <div class="video-grid">
 
-<video controls>
-<source src="SFarmacia.mp4" type="video/mp4">    
-</video>
-
-<video controls>
-<source src="Nolo.mp4" type="video/mp4">
-</video>
-
-<video controls>
-<source src="Tenemos.mp4" type="video/mp4">
-</video>
-
+<div class="video-item">
+<video controls src="SFarmacia.mp4"></video>
+<p>Cómo usar correctamente tus medicamentos.</p>
 </div>
 
+<div class="video-item">
+<video controls src="Nolo.mp4"></video>
+<p>Importancia de no automedicarse.</p>
+</div>
+
+<div class="video-item">
+<video controls src="Tenemos.mp4"></video>
+<p>Productos esenciales para el hogar.</p>
+</div>
+
+</div>
+</section>
+
+<!-- 8 CONTACTO -->
+
+<section id="contacto" class="contacto">
+<h2>Contacto</h2>
+
+<p>📍 Ometepec, Guerrero</p>
+<p>📞 +52 555 123 456</p>
+<p>📧 farmacia@gmail.com</p>
+<p>🕒 8:00 AM - 10:00 PM</p>
+
+<form id="formulario">
+<input type="text" placeholder="Nombre" required>
+<input type="email" placeholder="Correo" required>
+<textarea placeholder="Mensaje"></textarea>
+<button type="submit">Enviar</button>
+</form>
 </section>
 
 <footer>
-
-<p>Farmacia Salud © 2025</p>
-<p>Tel: +52 555 123 456</p>
-
+<p>Farmacia Salud+ © 2025</p>
 </footer>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+
