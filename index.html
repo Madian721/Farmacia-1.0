@@ -12,6 +12,8 @@
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 <h1>💊 Farmacia Salud+</h1>
 
@@ -29,20 +31,24 @@
 </div>
 </header>
 
-<!-- BANNER -->
+<!-- 1️⃣ INICIO (CON IMAGEN) -->
 
 <section id="inicio" class="banner">
+<img src="farmacia.jpg" class="banner-img">
+
+<div class="banner-texto">
 <h2>Tu salud es nuestra prioridad</h2>
-<p>Medicamentos y atención profesional</p>
+<p>Medicamentos confiables y atención profesional</p>
+</div>
 </section>
 
-<!-- BUSCADOR -->
+<!-- 2️⃣ BUSCADOR -->
 
 <section class="buscador">
 <input type="text" id="buscar" placeholder="Buscar producto...">
 </section>
 
-<!-- PRODUCTOS -->
+<!-- 3️⃣ PRODUCTOS -->
 
 <section id="productos" class="productos">
 <h2>Productos</h2>
@@ -69,14 +75,13 @@
 <button onclick="comprar()">Agregar</button>
 </div>
 </div>
-
 </section>
 
-<!-- OFERTAS -->
+<!-- 4️⃣ OFERTAS -->
 
 <section id="ofertas" class="ofertas">
 <h2>Aprovecha estas ofertas</h2>
-<p class="subtitulo">¡Siempre ahorrando, siempre contigo!</p>
+<p class="subtitulo">¡Siempre ahorrando contigo!</p>
 
 <div class="ofertas-grid">
 
@@ -107,46 +112,55 @@
 </div>
 </section>
 
-<!-- SERVICIOS -->
+<!-- 5️⃣ SERVICIOS -->
 
 <section id="servicios" class="servicios">
 <h2>Servicios</h2>
+
 <div class="grid">
 <div class="producto"><h3>Recargas</h3></div>
 <div class="producto"><h3>Pago de servicios</h3></div>
-<div class="producto"><h3>Envíos</h3></div>
+<div class="producto"><h3>Envíos a domicilio</h3></div>
 </div>
 </section>
 
-<!-- VIDEOS -->
+<!-- 6️⃣ VIDEOS -->
 
 <section id="videos" class="videos">
 <h2>Consejos de Salud</h2>
 
 <div class="video-grid">
-<div>
+
+<div class="video-card">
 <video controls src="SFarmacia.mp4"></video>
-<p>Uso correcto de medicamentos</p>
+<p>Uso correcto de medicamentos y recomendaciones básicas.</p>
 </div>
 
-<div>
+<div class="video-card">
 <video controls src="Nolo.mp4"></video>
-<p>No automedicarse</p>
-</div>
+<p>Evita la automedicación, consulta siempre a un profesional.</p>
 </div>
 
+<div class="video-card">
+<video controls src="Tenemos.mp4"></video>
+<p>Conoce nuestros servicios y atención farmacéutica.</p>
+</div>
+
+</div>
 </section>
 
-<!-- CONTACTO -->
+<!-- 7️⃣ CONTACTO -->
 
 <section id="contacto" class="contacto">
-<h2>Contacto</h2>
 
+<div class="contacto-info">
+<h2>Contacto</h2>
 <p>📍 Ometepec, Guerrero</p>
 <p>📞 +52 555 123 456</p>
 <p>📧 farmacia@gmail.com</p>
+</div>
 
-<form id="formulario">
+<form class="contacto-form" id="formulario">
 <input type="text" placeholder="Nombre" required>
 <input type="email" placeholder="Correo" required>
 <textarea placeholder="Mensaje"></textarea>
@@ -155,7 +169,7 @@
 
 </section>
 
-<!-- FOOTER PRO -->
+<!-- 8️⃣ FOOTER -->
 
 <section class="footer-top">
 
@@ -165,7 +179,7 @@
 <input type="email" placeholder="Correo electrónico">
 <button>Registrarme</button>
 
-<label class="check">
+<label>
 <input type="checkbox">
 Acepto <a href="#">Términos</a> y <a href="#">Privacidad</a>
 </label>
@@ -209,7 +223,6 @@ Acepto <a href="#">Términos</a> y <a href="#">Privacidad</a>
 </div>
 
 <div class="extras">
-
 <div class="redes">
 <p>Síguenos</p>
 <span>📘</span>
@@ -222,7 +235,6 @@ Acepto <a href="#">Términos</a> y <a href="#">Privacidad</a>
 <span>💳</span>
 <span>🏦</span>
 </div>
-
 </div>
 
 </section>
@@ -235,6 +247,7 @@ Acepto <a href="#">Términos</a> y <a href="#">Privacidad</a>
 
 </body>
 </html>
+
 
 
 
